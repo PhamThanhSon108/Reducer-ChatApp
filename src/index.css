@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.control {
+  width: 19%;
+  display: flex;
+  justify-content: space-between;
+}
+.Navbar {
+  display: flex;
+  list-style: none;
+  background-color: rgb(197, 154, 154)
+}
+.Navbar__item {
+    pading: 10px 20px;
+    margin: 10px;
+}
+#checked__input:checked ~ label {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color:rgba(255,0,0,0.3);
+}
+
+@media screen and (max-width: 800px) {
+  .Navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
